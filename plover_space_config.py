@@ -12,15 +12,10 @@ def space_placement_toggle(engine: StenoEngine, _) -> None:
 	Toggle the spacing type.
 	'''
 
-	print("toggling")
-	print("current: " + engine.config['space_placement'])
-
 	if engine.config['space_placement'] == BEFORE:
 		engine.config = { 'space_placement' : AFTER }
 	else:
 		engine.config = { 'space_placement' : BEFORE }
-
-	print("after: " + engine.config['space_placement'])
 
 def space_placement_before(engine: StenoEngine, _) -> None:
 	'''
